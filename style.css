@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(202, 202, 202);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 40px 0;
+}
+body .card{
+    width: 80%;
+    background-color: white;
+    border-radius: 15px;
+    padding: 40px 65px 65px 30px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+}
+@media screen and (max-width:650px){
+    body .card{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:650px){
+    body .card .title{
+        font-size: 23px;
+    }
+}
+body .card .content{
+    display: flex;
+    margin: 40px 0 0 0;
+}
+@media screen and (max-width:1100px){
+    body .card .content{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+body .card .content .sidebar{
+    width: 270px;
+    border: 1px solid gray;
+    flex-shrink: 0;
+    border-radius: 8px;
+    padding: 15px 10px;
+}
+body .card .content .sidebar .posts{
+    margin: 10px 0 0 0;
+}
+body .card .content .sidebar .posts .post{
+    margin: 15px 0;
+    padding: 10px;
+}
+body .card .content .sidebar .posts .post:hover{
+    background-color: #FFEFD5;
+}
+body .card .content .sidebar .posts .post .name{
+    font-size: 14px;
+    color: #FFA500;
+}
+body .card .content .list{
+    flex-grow: 1;
+    display: flex;
+    flex-wrap: wrap;
+}
+@media screen and (max-width:1100px){
+    body .card .content .list{
+        width: 100%;
+    }
+}
+body .card .content .list .item{
+    width: 50%;
+    margin-bottom: 25px;
+    padding: 10px;
+}
+body .card .content .list .item:hover{
+    background-color: rgb(204, 204, 204);
+}
+@media screen and (max-width:650px){
+    body .card .content .list .item{
+        width: 100%;
+    }
+}
+body .card .content .list .item figure{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #FFA500;
+    padding: 2px;
+}
+
+body .card .content .list .item figure img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    filter: brightness(0%) invert(1); 
+}
+body .card .content .list .item .title{
+    font-size: 18px;
+    margin: 8px 0 0 0;
+}
+body .card .content .list .item .description{
+    margin: 8px 0 0 0;
+}
